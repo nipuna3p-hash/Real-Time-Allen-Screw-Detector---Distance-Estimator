@@ -65,10 +65,11 @@ The script uses a hardcoded `FOCAL_LENGTH = 800`. To get accurate distance readi
 1. Place the Allen screw at a **known distance** (e.g., 20 cm) from the camera.
 2. Run a temporary script or print the `pixel_width` detected by YOLO.
 3. Apply the formula:
-$$ F = \frac{P \times D}{W} $$
-*  = Apparent width in pixels (from the camera).
-*  = Actual distance (e.g., 20 cm).
-*  = Real width of the object (e.g., 1.0 cm).
+<img width="147" height="74" alt="image" src="https://github.com/user-attachments/assets/c691ad96-7681-4923-9a21-2ac456387edf" />
+
+*  Apparent width in pixels (from the camera).
+*  Actual distance (e.g., 20 cm).
+*  Real width of the object (e.g., 1.0 cm).
 
 
 4. Update the value in `run.py`:
