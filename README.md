@@ -3,7 +3,11 @@
 
 This project implements a real-time computer vision system capable of detecting "Allen screws" and estimating their distance (Z-depth) from the camera. It utilizes a custom-trained **YOLOv8** model for object detection and the **Triangle Similarity Principle** for depth estimation.
 
-## 🌟 Key Features
+## Demos
+[yolov8x.webm](https://github.com/user-attachments/assets/4631a0d2-50bc-40ed-a235-7558f37b55a9)
+
+
+## Key Features
 
 * **Real-Time Detection:** Uses Ultralytics YOLOv8 for fast and accurate inference via webcam.
 * **Distance Estimation:** Calculates the Z-axis depth (in cm) based on the object's pixel width.
@@ -12,7 +16,7 @@ This project implements a real-time computer vision system capable of detecting 
 
 ---
 
-## 📊 Model Performance
+##  Model Performance
 
 The model was trained for 50 epochs and achieved high performance metrics, ensuring reliable detection in deployment.
 
@@ -28,7 +32,7 @@ The model is specifically optimized for the target class used in the script:
 
 ---
 
-## 🛠️ Prerequisites
+##  Prerequisites
 
 * Python 3.8+
 * A webcam (connected to index `0` by default).
@@ -43,7 +47,7 @@ pip install opencv-python numpy ultralytics
 
 ---
 
-## ⚙️ Configuration & Calibration
+##  Configuration & Calibration
 
 Before running `run.py`, must configure the constants at the top of the file to match your hardware setup.
 
@@ -82,7 +86,7 @@ FOCAL_LENGTH = 800 # Replace with calculated value
 
 ---
 
-## 🚀 Usage
+##  Usage
 
 1. Ensure your trained model weights (`best.pt`) are in the same directory as the script.
 2. Run the script:
@@ -105,7 +109,7 @@ Found Allen screw at X:325 Y:238 Z:15.38
 
 ---
 
-## 🧠 Logic Explanation
+## Logic Explanation
 
 The distance calculation relys on the relationship between focal length (), real object width (), and observed pixel width ():
 
@@ -117,7 +121,7 @@ This formula is derived from the triangle similarity principle, assuming the obj
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 .
